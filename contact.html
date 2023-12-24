@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raíces</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<body>
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <a href="PrimeraWeb.html">
+                </a>
+
+                <nav class="navegacion">
+
+                    <a href="anuncios.html">Announcements</a>
+                    <a href="contacto.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <h1 class="fw-300 centrar-texto">Contact</h1>
+
+    <img src="img/destacada3.jpg" alt="Imagen Principal">
+
+    <main class="contenedor seccion contenido-centrado">
+
+        <h2 class="fw-300 centrar-texto">Fill out the Contact form</h2>
+
+        <form action="">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="nombre">Number:</label>
+                <input type="text" id="nombre" placeholder="Enter the number">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your E-mail" required>
+            
+                <label for="telefono">Telephone:</label>
+                <input type="tel" id="telefono" placeholder="Enter the Phone " required>
+            
+                <label for="mensaje">Message:</label>
+                <textarea name="mensaje" id="" cols="50" rows="4"></textarea>
+                
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Property Information</legend>
+                <label for="opciones">Sells the Purchase</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="Compra">Purchase</option>
+                    <option value="Vende">Sells</option>
+                </select>
+
+                <label for="cantidad">Quantity</label>
+                <input type="number" min="0">
+            </fieldset>
+
+            <fieldset>
+                <legend>contact</legend>
+                <p>How do you want to be contacted?</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telephone</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+                    <p>If you wish to be contacted by phone, please choose date and time:</p>
+                    <label for="fecha">Date:</label>
+                    <input type="date" id="fecha">
+                    <label for="hora">Hour:</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+                
+            </fieldset>
+
+                <input type="submit" value="Sumbit" class="boton boton-verde">
+        
+            </form> 
+    
+    </main>
+
+<footer class="site-footer seccion">
+    <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+            <a href="anuncios.html">Announcements</a>
+                    <a href="contacto.html">Contact</a>
+        </nav>
+    </div>
+</footer>
+</head>
+</html>
+</body>
+</html>
